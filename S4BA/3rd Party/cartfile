@@ -1,0 +1,33 @@
+
+#
+# syntax: https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md
+# nice example: https://www.raywenderlich.com/165660/carthage-tutorial-getting-started-2
+#
+# Carthage supports several kinds of version requirements:
+#
+#   >= 1.0 for “at least version 1.0”
+#   ~> 1.0 for “compatible with version 1.0”
+#   == 1.0 for “exactly version 1.0”
+#   "some-branch-or-tag-or-commit" for a specific Git object (anything allowed by git rev-parse).
+#   Note: This form of requirement is not supported for binary origins.
+#
+#   If no version requirement is given, any version of the dependency is allowed.
+#
+# Update to specified files declared in Cartfile file (which was ran and Build folder checked in):
+#   carthage update --platform iOS
+#
+# Rebuild mods from Build/Checkout folders
+#   carthage update --use-submodules
+#
+# Refetch specific files declared in Cartfile.resolved
+#   carthage bootstrap
+#
+# Finally, add the framework built to the project General Tab / Frameworks, and create
+# a Build Phase Copy Files Script with Framework destination:
+#   > /usr/local/bin/carthage copy-frameworks
+# and for input files:
+#   $(SRCROOT)/Carthage/Build/iOS/ZipArchive.framework
+#
+
+# networking
+github "Alamofire/Alamofire" ~> 4.7
