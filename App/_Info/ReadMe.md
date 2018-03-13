@@ -5,6 +5,6 @@ Install Carthage
 
 
 Update Carthage Dependencies
-  > cd <installdir>/S4BA/3rd\ Party
+  > cd <installdir>/App/3rd\ Party
   > carthage update --platform iOS
 
